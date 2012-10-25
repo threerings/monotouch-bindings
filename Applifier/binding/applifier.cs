@@ -3,6 +3,7 @@
 //
 //
 using System;
+using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
@@ -27,6 +28,9 @@ namespace MonoTouch.Applifier {
 
         [Export ("showFeaturedGames")]
         void ShowFeaturedGames ();
+
+        [Export ("showBannerAt:")]
+        void ShowBannerAt (PointF position);
     }
 
     [BaseType (typeof (NSObject))]
