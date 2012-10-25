@@ -9,14 +9,14 @@ namespace MonoTouch.Applifier {
             params UIDeviceOrientation[] supportedOrientations)
         {
             if (supportedOrientations == null)
-                throw new ArgumentNullException("supportedOrientations");
+                throw new ArgumentNullException ("supportedOrientations");
 
-            NSMutableArray orientationsArray = new NSMutableArray(supportedOrientations.Length);
+            NSMutableArray orientationsArray = new NSMutableArray (supportedOrientations.Length);
             for (int i = 0; i < supportedOrientations.Length; ++i) {
-                orientationsArray.Add(NSNumber.FromInt32((int) supportedOrientations[i]));
+                orientationsArray.Add (NSNumber.FromInt32 ((int) supportedOrientations[i]));
             }
 
-            return Applifier.InitWithApplifierID(applifierId, window, orientationsArray);
+            return Applifier.InitWithApplifierID (applifierId, window, orientationsArray);
         }
 	}
 
