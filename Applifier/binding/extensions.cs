@@ -12,7 +12,7 @@ namespace MonoTouch.Applifier {
                 throw new ArgumentNullException("supportedOrientations");
 
             NSMutableArray orientationsArray = new NSMutableArray(supportedOrientations.Length);
-            for (int i = 1; i < supportedOrientations.Length; ++i) {
+            for (int i = 0; i < supportedOrientations.Length; ++i) {
                 orientationsArray.Add(NSNumber.FromInt32((int) supportedOrientations[i]));
             }
 
