@@ -11,12 +11,14 @@ TODO
 Building
 ========
 
-Run `make' in the binding directory to build Facebook.dll.
+Run `make' in the binding directory to build Applifier.dll.
 
 Sample
 ======
 
 TODO
+
+There is some incomplete sample code in the sample directory for reference.
 
 License
 =======
