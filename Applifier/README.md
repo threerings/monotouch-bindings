@@ -1,4 +1,4 @@
-facebook
+Applifier
 ========
 
 These are bindings to the native Applifier API for iOS.
