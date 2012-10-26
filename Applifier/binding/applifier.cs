@@ -5,23 +5,30 @@
 using System;
 using System.Drawing;
 using MonoTouch.Foundation;
+using MonoTouch.ObjCRuntime;
 using MonoTouch.UIKit;
 
 namespace MonoTouch.Applifier {
 
     [BaseType (typeof (NSObject))]
     interface Applifier {
-        [Static]
-        [Export ("initWithApplifierID:withWindow:supportedOrientationsArray:"), Internal]
-        Applifier InitWithApplifierID (string applifierID, UIWindow withWindow,
-            NSMutableArray orientationsArray);
+        [Export ("initWithApplifierID:withWindow:supportedOrientations:"), Static]
+        Applifier InitWithApplifierId (string applifierId, UIWindow withWindow,
+            UIDeviceOrientation firstOrientation, IntPtr orientationsPtr);
 
-        [Static]
-        [Export ("sharedInstance")]
-        Applifier SharedInstance ();
+        [Export ("initWithApplifierID:withWindow:delegate:usingBanners:usingInterstitials:usingFeaturedGames:supportedOrientations:"), Static]
+        Applifier InitWithApplifierId (string applifierId, UIWindow withWindow,
+            ApplifierGameDelegate gameDelegate, bool usingBanners, bool usingInterstitials,
+            bool usingFeaturedGames, UIDeviceOrientation firstOrientation, IntPtr orientationsPtr);
 
-        [Export ("gameDelegate")]
-        ApplifierGameDelegate GameDelegate { get; set; }
+        [Export ("sharedInstance"), Static]
+        Applifier SharedInstance { get; }
+
+        [Wrap ("WeakDelegate")]
+        ApplifierGameDelegate Delegate { get; set; }
+
+        [Export ("gameDelegate", ArgumentSemantic.Retain)]
+        NSObject WeakDelegate { get; set; }
 
         [Export ("prepareFeaturedGames")]
         void PrepareFeaturedGames ();
@@ -36,10 +43,10 @@ namespace MonoTouch.Applifier {
     [BaseType (typeof (NSObject))]
     [Model]
     interface ApplifierGameDelegate {
-        [Export("applifierInterstitialReady")]
+        [Export("applifierInterstitialReady"), Abstract]
         void InterstitialReady ();
 
-        [Export("applifierFeaturedGamesReady")]
+        [Export("applifierFeaturedGamesReady"), Abstract]
         void FeaturedGamesReady ();
 
         [Export("applifierBannerReady")]
