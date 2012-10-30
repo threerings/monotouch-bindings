@@ -26,7 +26,7 @@ namespace playn.sample.hello.ios {
       p.assets().setPathPrefix("assets");
       PlayN.run(new HelloGame());
 
-      ApplifierWrapper.Init(AppId, (UIWindow) p.uiOverlay().Superview.Superview, UIDeviceOrientation.Portrait);
+      ApplifierWrapper.Init(AppId, (UIWindow) p.uiOverlay().Superview.Superview, UIDeviceOrientation.Portrait, UIDeviceOrientations.PortraitUpsideDown);
       ApplifierWrapper.ShowFeaturedGames();
 
       return true;
