@@ -3,7 +3,7 @@ using System.Drawing;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
-using MonoTouch.Applifier;
+using MonoTouch.ApplifierWrapper;
 
 using playn.ios;
 using playn.core;
@@ -26,31 +26,10 @@ namespace playn.sample.hello.ios {
       p.assets().setPathPrefix("assets");
       PlayN.run(new HelloGame());
 
-      Applifier.InitWithApplifierId(AppId, (UIWindow) p.uiOverlay().Superview.Superview, UIDeviceOrientation.Portrait);
-      Applifier.SharedInstance.Delegate = new GameDelegate();
-      Console.WriteLine ("GameDelegate: " + Applifier.SharedInstance.Delegate);
-      Console.WriteLine ("Preparing featured games");
-      Applifier.SharedInstance.PrepareFeaturedGames();
-      Applifier.SharedInstance.ShowBannerAt(new PointF(10, 10));
+      ApplifierWrapper.Init(AppId, (UIWindow) p.uiOverlay().Superview.Superview, UIDeviceOrientation.Portrait);
+      ApplifierWrapper.ShowFeaturedGames();
 
       return true;
-    }
-  }
-
-  class GameDelegate : ApplifierGameDelegate {
-    public GameDelegate () {
-      Console.Out.WriteLine ("Created GameDelegate");
-    }
-
-    public override void FeaturedGamesReady () {
-      Console.Out.WriteLine ("FeaturedGamesReady");
-    }
-
-    public override void InterstitialReady () {
-    }
-
-    public override void PauseGame () {
-      Console.WriteLine ("PauseGame");
     }
   }
 
