@@ -15,8 +15,6 @@ static bool showFeaturedGamesImmediately = false;
 
 + (void)init:(NSString *)applifierID withWindow:(UIWindow *)window supportedOrientations:(UIDeviceOrientation)orientationsToSupport, ...
 {
-    NSLog(@"ApplifierWrapper.init in iOS");
-    
     // Go through the va_args, init supported orientations
     NSMutableArray *orientations = [[NSMutableArray alloc] init];
     va_list args;
@@ -30,8 +28,6 @@ static bool showFeaturedGamesImmediately = false;
     [Applifier initWithApplifierID:applifierID withWindow:window supportedOrientationsArray:orientations];
     [Applifier sharedInstance].gameDelegate = ApplifierWrapper.wrapperSingleton;
     [[Applifier sharedInstance] prepareFeaturedGames];
-    
-    NSLog(@"initialized, preparing featured games");
 }
 
 + (void)showFeaturedGames
@@ -46,10 +42,8 @@ static bool showFeaturedGamesImmediately = false;
 
 - (void)applifierFeaturedGamesReady
 {
-    NSLog(@"applifierFeaturedGamesReady");
     featuredGamesReady = true;
     if (showFeaturedGamesImmediately) {
-        NSLog(@"Showing featured games immediately");
         [ApplifierWrapper showFeaturedGames];
     }
 }
