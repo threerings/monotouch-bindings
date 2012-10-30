@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D8DB384A164070440063BE68 /* ApplifierWrapperAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D8DB384B164070440063BE68 /* Build configuration list for PBXAggregateTarget "ApplifierWrapperAggregate" */;
+			buildPhases = (
+				D8DB384E1640704B0063BE68 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = ApplifierWrapperAggregate;
+			productName = ApplifierWrapperAggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D8DB380F16406EC70063BE68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB380E16406EC70063BE68 /* UIKit.framework */; };
+		D8DB381116406EC70063BE68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB381016406EC70063BE68 /* Foundation.framework */; };
+		D8DB381316406EC70063BE68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB381216406EC70063BE68 /* CoreGraphics.framework */; };
+		D8DB381916406EC70063BE68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8DB381716406EC70063BE68 /* InfoPlist.strings */; };
+		D8DB383E16406FCF0063BE68 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB383D16406FCF0063BE68 /* CoreFoundation.framework */; };
+		D8DB384416406FCF0063BE68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D8DB384216406FCF0063BE68 /* InfoPlist.strings */; };
+		D8DB3854164070CB0063BE68 /* Applifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB3853164070CB0063BE68 /* Applifier.framework */; };
+		D8DB3855164070CE0063BE68 /* Applifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DB3853164070CB0063BE68 /* Applifier.framework */; };
+		D8DB385B164071B20063BE68 /* ApplifierWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D8DB3859164071B20063BE68 /* ApplifierWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8DB385C164071B20063BE68 /* ApplifierWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DB385A164071B20063BE68 /* ApplifierWrapper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8DB380A16406EC70063BE68 /* ApplifierWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApplifierWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DB380E16406EC70063BE68 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8DB381016406EC70063BE68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8DB381216406EC70063BE68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D8DB381616406EC70063BE68 /* ApplifierWrapper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplifierWrapper-Info.plist"; sourceTree = "<group>"; };
+		D8DB381816406EC70063BE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8DB383C16406FCF0063BE68 /* ApplifierWrapperBundle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplifierWrapperBundle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8DB383D16406FCF0063BE68 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D8DB384116406FCF0063BE68 /* ApplifierWrapperBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApplifierWrapperBundle-Info.plist"; sourceTree = "<group>"; };
+		D8DB384316406FCF0063BE68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D8DB384516406FCF0063BE68 /* ApplifierWrapperBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApplifierWrapperBundle-Prefix.pch"; sourceTree = "<group>"; };
+		D8DB3853164070CB0063BE68 /* Applifier.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Applifier.framework; path = "../binding/applifier-mobile/ios/build/Release-iphoneos/Applifier.framework"; sourceTree = "<group>"; };
+		D8DB3859164071B20063BE68 /* ApplifierWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplifierWrapper.h; sourceTree = "<group>"; };
+		D8DB385A164071B20063BE68 /* ApplifierWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplifierWrapper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8DB380716406EC70063BE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB380F16406EC70063BE68 /* UIKit.framework in Frameworks */,
+				D8DB381116406EC70063BE68 /* Foundation.framework in Frameworks */,
+				D8DB381316406EC70063BE68 /* CoreGraphics.framework in Frameworks */,
+				D8DB3854164070CB0063BE68 /* Applifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DB383916406FCF0063BE68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB383E16406FCF0063BE68 /* CoreFoundation.framework in Frameworks */,
+				D8DB3855164070CE0063BE68 /* Applifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8DB37FF16406EC70063BE68 = {
+			isa = PBXGroup;
+			children = (
+				D8DB3853164070CB0063BE68 /* Applifier.framework */,
+				D8DB381416406EC70063BE68 /* ApplifierWrapper */,
+				D8DB383F16406FCF0063BE68 /* ApplifierWrapperBundle */,
+				D8DB380D16406EC70063BE68 /* Frameworks */,
+				D8DB380B16406EC70063BE68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8DB380B16406EC70063BE68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB380A16406EC70063BE68 /* ApplifierWrapper.app */,
+				D8DB383C16406FCF0063BE68 /* ApplifierWrapperBundle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8DB380D16406EC70063BE68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB380E16406EC70063BE68 /* UIKit.framework */,
+				D8DB381016406EC70063BE68 /* Foundation.framework */,
+				D8DB381216406EC70063BE68 /* CoreGraphics.framework */,
+				D8DB383D16406FCF0063BE68 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8DB381416406EC70063BE68 /* ApplifierWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB381516406EC70063BE68 /* Supporting Files */,
+			);
+			path = ApplifierWrapper;
+			sourceTree = "<group>";
+		};
+		D8DB381516406EC70063BE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB381616406EC70063BE68 /* ApplifierWrapper-Info.plist */,
+				D8DB381716406EC70063BE68 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8DB383F16406FCF0063BE68 /* ApplifierWrapperBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB3859164071B20063BE68 /* ApplifierWrapper.h */,
+				D8DB385A164071B20063BE68 /* ApplifierWrapper.m */,
+				D8DB384016406FCF0063BE68 /* Supporting Files */,
+			);
+			path = ApplifierWrapperBundle;
+			sourceTree = "<group>";
+		};
+		D8DB384016406FCF0063BE68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8DB384116406FCF0063BE68 /* ApplifierWrapperBundle-Info.plist */,
+				D8DB384216406FCF0063BE68 /* InfoPlist.strings */,
+				D8DB384516406FCF0063BE68 /* ApplifierWrapperBundle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D8DB3856164070DC0063BE68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB385B164071B20063BE68 /* ApplifierWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D8DB380916406EC70063BE68 /* ApplifierWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DB383116406EC70063BE68 /* Build configuration list for PBXNativeTarget "ApplifierWrapper" */;
+			buildPhases = (
+				D8DB380616406EC70063BE68 /* Sources */,
+				D8DB380716406EC70063BE68 /* Frameworks */,
+				D8DB380816406EC70063BE68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplifierWrapper;
+			productName = ApplifierWrapper;
+			productReference = D8DB380A16406EC70063BE68 /* ApplifierWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8DB383B16406FCF0063BE68 /* ApplifierWrapperBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8DB384816406FCF0063BE68 /* Build configuration list for PBXNativeTarget "ApplifierWrapperBundle" */;
+			buildPhases = (
+				D8DB383816406FCF0063BE68 /* Sources */,
+				D8DB383916406FCF0063BE68 /* Frameworks */,
+				D8DB383A16406FCF0063BE68 /* Resources */,
+				D8DB3856164070DC0063BE68 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApplifierWrapperBundle;
+			productName = ApplifierWrapperBundle;
+			productReference = D8DB383C16406FCF0063BE68 /* ApplifierWrapperBundle.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8DB380116406EC70063BE68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Three Rings Design";
+			};
+			buildConfigurationList = D8DB380416406EC70063BE68 /* Build configuration list for PBXProject "ApplifierWrapper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8DB37FF16406EC70063BE68;
+			productRefGroup = D8DB380B16406EC70063BE68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8DB380916406EC70063BE68 /* ApplifierWrapper */,
+				D8DB383B16406FCF0063BE68 /* ApplifierWrapperBundle */,
+				D8DB384A164070440063BE68 /* ApplifierWrapperAggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8DB380816406EC70063BE68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB381916406EC70063BE68 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DB383A16406FCF0063BE68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB384416406FCF0063BE68 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8DB384E1640704B0063BE68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nFMK_NAME=ApplifierWrapperBundle\nFMK_VERSION=A\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\n# Creates and renews the final product folder.\nmkdir -p \"${INSTALL_DIR}\"\nmkdir -p \"${INSTALL_DIR}/Versions\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers\"\n\n# Creates the internal links.\n# It MUST uses relative path, otherwise will not work when the folder is copied/moved.\nln -s \"${FMK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FMK_NAME}\" \"${INSTALL_DIR}/${FMK_NAME}\"\n\n# Copies the headers and resources files to the final product folder.\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/\"\n\n# Removes the binary and header from the resources folder.\nrm -r \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FMK_VERSION}/Resources/${FMK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FMK_VERSION}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8DB380616406EC70063BE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8DB383816406FCF0063BE68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DB385C164071B20063BE68 /* ApplifierWrapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D8DB381716406EC70063BE68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8DB381816406EC70063BE68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D8DB384216406FCF0063BE68 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8DB384316406FCF0063BE68 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8DB382F16406EC70063BE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8DB383016406EC70063BE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8DB383216406EC70063BE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../binding/applifier-mobile/ios/build/Release-iphoneos\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplifierWrapper/ApplifierWrapper-Prefix.pch";
+				INFOPLIST_FILE = "ApplifierWrapper/ApplifierWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D8DB383316406EC70063BE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../binding/applifier-mobile/ios/build/Release-iphoneos\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplifierWrapper/ApplifierWrapper-Prefix.pch";
+				INFOPLIST_FILE = "ApplifierWrapper/ApplifierWrapper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D8DB384616406FCF0063BE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../binding/applifier-mobile/ios/build/Release-iphoneos\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplifierWrapperBundle/ApplifierWrapperBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "ApplifierWrapperBundle/ApplifierWrapperBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		D8DB384716406FCF0063BE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../binding/applifier-mobile/ios/build/Release-iphoneos\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ApplifierWrapperBundle/ApplifierWrapperBundle-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "ApplifierWrapperBundle/ApplifierWrapperBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		D8DB384C164070440063BE68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D8DB384D164070440063BE68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8DB380416406EC70063BE68 /* Build configuration list for PBXProject "ApplifierWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DB382F16406EC70063BE68 /* Debug */,
+				D8DB383016406EC70063BE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8DB383116406EC70063BE68 /* Build configuration list for PBXNativeTarget "ApplifierWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DB383216406EC70063BE68 /* Debug */,
+				D8DB383316406EC70063BE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8DB384816406FCF0063BE68 /* Build configuration list for PBXNativeTarget "ApplifierWrapperBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DB384616406FCF0063BE68 /* Debug */,
+				D8DB384716406FCF0063BE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8DB384B164070440063BE68 /* Build configuration list for PBXAggregateTarget "ApplifierWrapperAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8DB384C164070440063BE68 /* Debug */,
+				D8DB384D164070440063BE68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8DB380116406EC70063BE68 /* Project object */;
+}
