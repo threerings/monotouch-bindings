@@ -2,14 +2,11 @@ PROJECT_ROOT=applifier-mobile/ios
 
 all: Applifier.dll
 
-applifier-mobile:
-	git clone git://github.com/Applifier/applifier-mobile.git
+libApplifierWrapper.a:
+	ln -s ../ApplifierWrapper/Products/ApplifierWrapperBundle.framework/ApplifierWrapperBundle $@
 
-Applifier.a: applifier-mobile
-	ln -s ${PROJECT_ROOT}/build/Release-iphoneos/Applifier.framework/Applifier $@
-
-Applifier.dll: applifier.cs AssemblyInfo.cs Applifier.a extensions.cs
-	/Developer/MonoTouch/usr/bin/btouch -e applifier.cs AssemblyInfo.cs -x=extensions.cs --out=$@ --link-with=Applifier.a,Applifier.a
+Applifier.dll: applifier.cs AssemblyInfo.cs libApplifierWrapper.a extensions.cs
+	/Developer/MonoTouch/usr/bin/btouch -e applifier.cs AssemblyInfo.cs -x=extensions.cs --out=$@ --link-with=libApplifierWrapper.a,libApplifierWrapper.a
 
 clean:
 	-rm -f *.a *dll
