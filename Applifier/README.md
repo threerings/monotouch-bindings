@@ -1,7 +1,11 @@
 Applifier
 ========
 
-These are bindings to the native Applifier API for iOS.
+These are extremely simple bindings to the native Applifier API for iOS. There
+is something tricky going on making it difficult to get the delegate to work
+across the C#/Obj-C boundary. So, there is now an ApplifierWrapper iOS framework
+in ApplifierWrapper. That framework handles the delegate, and currently exposes
+only one piece of functionality: showFeaturedGames.
 
 Using
 =====
@@ -11,7 +15,12 @@ TODO
 Building
 ========
 
-Run `make' in the binding directory to build Applifier.dll.
+To build ApplifierWrapper, run make applifier-mobile in this directory, then
+open the project in XCode. There is an included build checked in at
+ApplifierWrapper/Products/ApplifierWrapperBundle.framework.
+
+Run `make' in the binding directory to build Applifier.dll. This does not
+require a fresh build of the wrapper framework.
 
 Sample
 ======
