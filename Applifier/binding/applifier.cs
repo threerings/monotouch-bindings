@@ -16,6 +16,9 @@ namespace MonoTouch.ApplifierWrapper {
         void Init (string applifierId, UIWindow withWindow,
             UIDeviceOrientation firstOrientation, IntPtr orientationsPtr);
 
+        [Export ("prepareFeaturedGames"), Static]
+        void PrepareFeaturedGames ();
+
         [Export ("showFeaturedGames"), Static]
         void ShowFeaturedGames ();
     }

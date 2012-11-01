@@ -27,6 +27,10 @@ static bool showFeaturedGamesImmediately = false;
     
     [Applifier initWithApplifierID:applifierID withWindow:window supportedOrientationsArray:orientations];
     [Applifier sharedInstance].gameDelegate = ApplifierWrapper.wrapperSingleton;
+}
+
++ (void)prepareFeaturedGames
+{
     [[Applifier sharedInstance] prepareFeaturedGames];
 }
 
